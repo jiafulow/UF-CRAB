@@ -1,0 +1,5 @@
+# 20140627
+#cp /uscms_data/d2/jiafu/L1TrackTrigger/CMSSW_6_2_0_SLHC12_patch1/src/SLHCL1TrackTriggerSimulations/NTupleTools/test/test_ntuple_neutrinos_cfg.py pset_ntuple_neutrinos_20140627.py
+
+# 20140821
+cp /uscms_data/d2/jiafu/L1TrackTrigger/CMSSW_6_2_0_SLHC12_patch1/src/SLHCL1TrackTriggerSimulations/NTupleTools/test/test_ntuple_neutrinos_cfg.py pset_ntuple_neutrinos_20140821.py

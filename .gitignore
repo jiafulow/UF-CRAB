@@ -1,0 +1,19 @@
+__init__.py
+dump.py
+*.pyc
+*.log
+*.root
+*~
+
+# ___________________________________
+# Exclude these files
+
+input_*.txt
+pset_*.py
+crab.history
+
+# ___________________________________
+# Exclude these directories
+
+backup/
+
