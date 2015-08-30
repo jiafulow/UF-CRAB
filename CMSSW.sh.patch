@@ -1,0 +1,19 @@
+diff --git a/CMSSW.sh b/CMSSW_new.sh
+index af3d13f..9c2ae62 100755
+--- a/CMSSW.sh
++++ b/CMSSW_new.sh
+@@ -599,6 +599,14 @@ executable=cmsRun
+ echo  $RUNTIME_AREA/writeCfg.py  pset.py pset.py
+ python $RUNTIME_AREA/writeCfg.py  pset.py pset.py
+ 
++echo '# Keep track of the most important random number generator seeds' >> pset.py
++echo 'from IOMC.RandomEngine.RandomServiceHelper import RandomNumberServiceHelper' >> pset.py
++echo 'randSvc = RandomNumberServiceHelper(process.RandomNumberGeneratorService)' >> pset.py
++echo 'print "generator seed =", randSvc.getNamedSeed("generator")' >> pset.py
++echo 'print "g4SimHits seed =", randSvc.getNamedSeed("g4SimHits")' >> pset.py
++echo 'print "VtxSmeared seed =", randSvc.getNamedSeed("VtxSmeared")' >> pset.py
++echo 'print "mix seed =", randSvc.getNamedSeed("mix")' >> pset.py
++
+         result=$?
+         if [ $result -ne 0 ]; then
+             echo "ERROR ==> problem re-writing config file"
