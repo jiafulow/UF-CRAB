@@ -1,0 +1,24 @@
+__init__.py
+dump.py
+*.pyc
+*.log
+*.root
+*~
+
+# ___________________________________
+# Exclude these files
+
+input_*.txt
+pset_*.py
+crab.history
+amsim*.csh
+amsim.exe
+trigger_sector_map.csv
+
+# ___________________________________
+# Exclude these directories
+
+backup/
+mycondor*/
+profiling*/
+
